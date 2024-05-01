@@ -1,0 +1,114 @@
+/* Container and Overall Layout */
+.relative-container {
+	position: relative;
+	padding-top: 0px;
+	overflow-y: auto;
+	max-height: calc(90vh - 10px);
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 800px; /* Optimal width for desktop */
+	margin: 0 auto; /* Center the container */
+}
+
+/* Cards */
+.card {
+	margin-bottom: 20px; /* Increased spacing between cards */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+	border-radius: 8px; /* Rounded corners for a modern look */
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease; /* Smooth transitions for interaction */
+}
+
+.card:hover {
+	transform: translateY(-5px); /* Slight lift effect */
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow for lifted effect */
+}
+
+.top-card {
+	margin-top: 40px; /* Adjust top margin for the first card */
+}
+
+/* Buttons */
+.btn-primary,
+.btn-secondary {
+	background-image: linear-gradient(
+		to right,
+		#007bff,
+		#0056b3
+	); /* Gradient background */
+	color: #ffffff;
+	border: none;
+	border-radius: 30px; /* More pronounced rounded corners */
+	padding: 10px 15px;
+	font-size: 18px; /* Larger font size */
+	transition:
+		background-image 0.3s ease,
+		transform 0.2s ease; /* Smooth transitions */
+	display: inline-block; /* Adjust if necessary */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+	margin-left: 20px; /* Adjusted margin */
+	width: auto; /* Auto width for better control */
+	margin: 10px auto; /* Center alignment */
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+	background-image: linear-gradient(
+		to right,
+		#0056b3,
+		#004094
+	); /* Darker gradient on hover */
+	transform: scale(1.05); /* Slight scale for tactile feedback */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow for depth */
+}
+
+.btn-primary:active,
+.btn-secondary:active {
+	transform: scale(0.98); /* Pressed effect */
+}
+
+/* Form Fields */
+.form-control {
+	border-radius: 5px;
+	border: 1px solid #ced4da;
+	padding: 0.75rem 1rem;
+	font-size: 16px; /* Adjusted for readability */
+	transition:
+		border-color 0.15s ease-in-out,
+		box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+	border-color: #80bdff;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Alert Messages */
+.alert {
+	border-radius: 5px;
+	padding: 15px;
+	font-size: 16px; /* Enhanced readability */
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	right: 15px;
+	z-index: 1050; /* Ensure visibility */
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+	.container,
+	.relative-container {
+		padding: 0 15px;
+	}
+	.card {
+		margin-bottom: 15px;
+	}
+}
+
+body {
+	overflow-x: hidden;
+	overflow-y: auto; /* Allow vertical scrolling */
+}

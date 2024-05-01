@@ -1,0 +1,95 @@
+.relative-container {
+	position: relative; /* This is crucial */
+	padding-top: 0px; /* Adjust this value based on the height of your alert */
+	overflow-y: auto;
+	max-height: calc(90vh - 10px);
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+.card {
+	margin-bottom: 10px; /* Add some spacing between cards */
+}
+
+.top-card {
+	margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 0 15px; /* Adjust padding for smaller screens */
+	}
+	.card {
+		margin-bottom: 15px; /* Adjust spacing between cards for smaller screens */
+	}
+}
+
+#main.btn-main {
+	background-color: #28a745; /* Success button color */
+	border: none; /* Remove default border */
+	color: #fff; /* Text color for contrast */
+	width: 90%; /* Adjust width for mobile screens */
+	/* margin: 90px auto 0; Center button with margin */
+	padding: 9px; /* Increase padding for easier interaction */
+	margin-left: 20px;
+	font-size: 16px; /* Optimal font size for mobile readability */
+	border-radius: 10px; /* Rounded corners for a modern look */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+	transition: all 0.3s ease; /* Smooth transition for interactive effects */
+	cursor: pointer; /* Cursor pointer for clickable feedback */
+	display: block; /* Ensure the button is block-level for width to take effect */
+}
+
+#main.btn-main:hover,
+#main.btn-main:focus {
+	background-color: #218838; /* Slightly darker shade on hover/focus */
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow for lift effect */
+	transform: translateY(
+		-2px
+	); /* Slight elevation on hover for tactile feedback */
+}
+
+#main.btn-main:active {
+	background-color: #1e7e34; /* Dark shade for active state */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Lower shadow for pressed effect */
+	transform: translateY(1px); /* Simulate button press */
+}
+
+.btn-secondary {
+	background-color: #007bff; /* Primary button color */
+	border: none; /* Remove default border */
+	color: #fff; /* Text color for contrast */
+	width: 90%; /* Adjust width for mobile screens */
+	margin: 25px auto 0; /* Center button with margin */
+	padding: 15px; /* Increase padding for easier interaction */
+	font-size: 16px; /* Optimal font size for mobile readability */
+	border-radius: 25px; /* Rounded corners for a modern look */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+	transition: all 0.3s ease; /* Smooth transition for interactive effects */
+	cursor: pointer; /* Cursor pointer for clickable feedback */
+	display: block; /* Ensure the button is block-level for width to take effect */
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+	background-color: #0056b3; /* Slightly darker shade on hover/focus */
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow for lift effect */
+	transform: translateY(
+		-2px
+	); /* Slight elevation on hover for tactile feedback */
+}
+
+.btn-secondary:active {
+	background-color: #004094; /* Dark shade for active state */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Lower shadow for pressed effect */
+	transform: translateY(1px); /* Simulate button press */
+}
+
+.success-message {
+	position: absolute;
+	top: 15px;
+	left: 15px; /* Align with the padding of the container */
+	right: 15px; /* Align with the padding of the container */
+	z-index: 1050; /* High z-index to ensure it's above other content */
+}

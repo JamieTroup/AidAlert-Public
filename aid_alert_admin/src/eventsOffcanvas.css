@@ -1,0 +1,74 @@
+.progress-container {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.progress-bar {
+	position: relative;
+	background-color: #eee;
+	height: 20px;
+	border-radius: 10px;
+}
+
+.marker {
+	position: absolute;
+	top: 2.5px; /* Adjust top to center the markers */
+	width: 15px;
+	height: 15px;
+	border: 3px solid #fff; /* White border to distinguish markers */
+	border-radius: 50%;
+	background-color: #ccc; /* Default inactive color */
+}
+
+.marker.active {
+	background-color: #bcbcbc; /* Active color indicating the milestone is reached */
+}
+
+.marker.assigned {
+	left: 28%;
+}
+.marker.accepted {
+	left: 61%;
+}
+.marker.arrived {
+	left: 100%;
+	transform: translateX(-100%);
+} /* Adjust for marker width */
+
+.progress-labels {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5px;
+}
+
+.label {
+	position: relative;
+	text-align: center;
+	font-size: 0.8rem;
+	width: 33%;
+}
+
+.progress-bar-fill {
+	height: 100%;
+	border-radius: 10px;
+	transition:
+		width 0.4s ease,
+		background-color 0.4s ease;
+}
+
+.progress-bar-fill.assigned {
+	background-color: red; /* Color for the Assigned stage */
+	width: 33%; /* Adjust width based on progress */
+}
+
+.progress-bar-fill.accepted {
+	background-color: rgb(250, 150, 0); /* Color for the Accepted stage */
+	width: 66%;
+}
+
+.progress-bar-fill.arrived {
+	background-color: rgb(0, 180, 0); /* Color for the Arrived stage */
+	width: 100%;
+}
+
+/* Marker and label styles remain the same */

@@ -1,0 +1,54 @@
+/* alertModal.css */
+
+.alert-modal .modal-content {
+	background-color: #e6e6e6; /* Alert background color */
+	border-color: #e6e6e6; /* Alert border color */
+	border-radius: 90; /* Optional: remove border radius for a more rectangular appearance */
+}
+
+.alert-modal .modal-body {
+	color: #721c24; /* Alert body text color */
+	padding-left: 20px; /* Optional: adjust padding for better appearance */
+	padding-right: 20px; /* Optional: adjust padding for better appearance */
+	padding-bottom: 0px;
+	font-size: 16px; /* Optional: adjust font size for better readability */
+}
+
+.alert-modal .modal-header,
+.alert-modal .modal-footer {
+	border-color: #f5c6cb; /* Alert header and footer border color */
+}
+
+.alert-modal .modal-title {
+	color: #721c24; /* Alert title color */
+}
+
+#return.btn-return {
+	background-color: #ff0000 !important; /* Button color */
+	border: none !important; /* Remove default border */
+	color: #fff; /* Text color for contrast */
+	font-weight: bolder; /* Bold text for emphasis */
+	width: 100%; /* Adjust width to fit buttons side by side */
+	padding: 20px; /* Increase padding for easier interaction */
+	font-size: 25px; /* Optimal font size for mobile readability */
+	border-radius: 10px; /* Rounded corners for a modern look */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+	transition: all 0.3s ease; /* Smooth transition for interactive effects */
+	cursor: pointer; /* Cursor pointer for clickable feedback */
+	display: inline-block; /* Change to inline-block to make buttons appear side by side */
+}
+
+#return.btn-return:hover,
+#return.btn-return:focus {
+	background-color: #880000; /* Slightly darker shade on hover/focus */
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow for lift effect */
+	transform: translateY(
+		-2px
+	); /* Slight elevation on hover for tactile feedback */
+}
+
+#return.btn-return:active {
+	background-color: rgb(113, 0, 0); /* Dark shade for active state */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Lower shadow for pressed effect */
+	transform: translateY(1px); /* Simulate button press */
+}
